@@ -1,0 +1,38 @@
+{
+  "defaultAssembly": "Lo.Data.Dapper",
+  "components": [
+    {
+      "name": "SqlDatabase",
+      "key": "Sql",
+      "type": "Lo.Data.Dapper.SqlDatabase, Lo.Data.Dapper",
+      "services": [
+        {
+          "name": "SqlDatabase",
+          "type": "Lo.Data.IDatabase, Lo.Data"
+        }
+      ],
+      "injectProperties": true,
+      "parameters": {
+        "connString": "Data Source=42.157.195.16,4344;Initial Catalog=C8_CBD;User ID=qxdev;Password=qxdev123456;",
+        "DbType": "SqlDatabase"
+      }
+    }
+    //,
+    //{
+    //  "name": "MysqlDatabase",
+    //  "key": "MySql",
+    //  "type": "Lo.Data.Dapper.MysqlDatabase, Lo.Data.Dapper",
+    //  "services": [
+    //    {
+    //      "name": "MysqlDatabase",
+    //      "type": "Lo.Data.IDatabase, Lo.Data"
+    //    }
+    //  ],
+    //  "injectProperties": true,
+    //  "parameters": {
+    //    "connString": "Data Source=42.157.195.16,4344;Initial Catalog=C8_CBD;User ID=qxdev;Password=qxdev123456;",
+    //    "DbType": "MysqlDatabase"
+    //  }
+    //}
+  ]
+}
