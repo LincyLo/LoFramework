@@ -13,7 +13,7 @@ namespace Lo.App.ConsoleApp
         {
             string sql = "select count(1) from comment";
 
-            var db = new RepositoryFactory().BaseRepository("Data Source=42.157.195.16,4344;Initial Catalog=C8_CBD;User ID=qxdev;Password=qxdev123456;");
+            var db = new RepositoryFactory().BaseRepository("Data Source=127.0.0.1;Initial Catalog=demo;User ID=sa;Password=luo123456;");
            var count= db.FindObject(sql);
 
             Console.WriteLine($"评论数量：{count}");
